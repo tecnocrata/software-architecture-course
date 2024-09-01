@@ -89,7 +89,8 @@
     "testEnvironment": "node"
   },
   "prisma": {
-    "schema": "./src/infra/data/prisma/schema.prisma"
+    "schema": "./src/infra/data/prisma/schema.prisma",
+    "seed": "ts-node ./src/infra/data/prisma/seed.ts"
   },
   "config": {
     "commitizen": {
