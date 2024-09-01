@@ -14,7 +14,8 @@ export class PrismaPostsRepository implements PostsRepository {
   }
 
   async findOne(filter: Partial<PostEntity>): Promise<PostEntity> {
-    return this.prisma.post.findUnique({ where: filter });
+    const { id, ...rest } = filter;
+    return this.prisma.post.findUnique({ where: { id: id ?? undefined, ...rest } });
   }
 
   async update(id: number, data: Partial<PostEntity>): Promise<PostEntity> {
