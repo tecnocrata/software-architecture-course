@@ -1,4 +1,4 @@
-# Arquitectura de Software
+# Clase 1: Arquitectura de Software
 
 [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
 
